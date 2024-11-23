@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NeftaliSolucionMauiApp1.MainPage"
+             Title="Instruments North"
+             BackgroundColor="#E8F5E9">
+
+    <ScrollView>
+        <StackLayout Padding="10">
+            <!-- Encabezado -->
+            <Grid ColumnDefinitions="Auto,*,Auto" VerticalOptions="Center">
+                <Image Source="menu.png" WidthRequest="30" HeightRequest="30" HorizontalOptions="Start" VerticalOptions="Center" Grid.Column="0" />
+                <Label Text="Instruments North"
+                       FontSize="24"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       Grid.Column="1"/>
+                <Image Source="cart.png" WidthRequest="30" HeightRequest="30"
+                       HorizontalOptions="End" VerticalOptions="Center"
+                       Grid.Column="2"/>
+            </Grid>
+
+            <!-- Banner -->
+            <ContentView BackgroundColor="#FFFFFF" Padding="10" Margin="10">
+                <Image Source="banner.png" Aspect="AspectFill" />
+            </ContentView>
+
+            <!-- Lista de Productos -->
+            <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto,Auto" RowSpacing="10" ColumnSpacing="10" Padding="5">
+                <!-- Producto 1 -->
+                <Frame Grid.Row="0" Grid.Column="0" BackgroundColor="White" Padding="10" Margin="5" CornerRadius="8" HasShadow="True">
+                    <StackLayout>
+                        <Image Source="guitarra.png" HeightRequest="100" Aspect="AspectFill" />
+                        <Label Text="Guitarra Eléctrica" FontAttributes="Bold" FontSize="16" />
+                        <Label Text="$18,000.00" FontSize="14" TextColor="Gray" />
+                        <Button Text="Comprar" BackgroundColor="#4CAF50" TextColor="White" />
+                    </StackLayout>
+                </Frame>
+
+                <!-- Producto 2 -->
+                <Frame Grid.Row="0" Grid.Column="1" BackgroundColor="White" Padding="10" Margin="5" CornerRadius="8" HasShadow="True">
+                    <StackLayout>
+                        <Image Source="bateria.png" HeightRequest="100" Aspect="AspectFill" />
+                        <Label Text="Batería Acústica" FontAttributes="Bold" FontSize="16" />
+                        <Label Text="$22,000.00" FontSize="14" TextColor="Gray" />
+                        <Button Text="Comprar" BackgroundColor="#4CAF50" TextColor="White" />
+                    </StackLayout>
+                </Frame>
+
+                <!-- Producto 3 -->
+                <Frame Grid.Row="1" Grid.Column="0" BackgroundColor="White" Padding="10" Margin="5" CornerRadius="8" HasShadow="True">
+                    <StackLayout>
+                        <Image Source="piano.png" HeightRequest="100" Aspect="AspectFill" />
+                        <Label Text="Piano Eléctrico" FontAttributes="Bold" FontSize="16" />
+                        <Label Text="$15,000.00" FontSize="14" TextColor="Gray" />
+                        <Button Text="Comprar" BackgroundColor="#4CAF50" TextColor="White" />
+                    </StackLayout>
+                </Frame>
+
+                <!-- Producto 4 -->
+                <Frame Grid.Row="1" Grid.Column="1" BackgroundColor="White" Padding="10" Margin="5" CornerRadius="8" HasShadow="True">
+                    <StackLayout>
+                        <Image Source="bajo.png" HeightRequest="100" Aspect="AspectFill" />
+                        <Label Text="Bajo Eléctrico" FontAttributes="Bold" FontSize="16" />
+                        <Label Text="$22,000.00" FontSize="14" TextColor="Gray" />
+                        <Button Text="Comprar" BackgroundColor="#4CAF50" TextColor="White" />
+                    </StackLayout>
+                </Frame>
+
+                <!-- Producto 5 -->
+                <Frame Grid.Row="2" Grid.Column="0" BackgroundColor="White" Padding="10" Margin="5" CornerRadius="8" HasShadow="True">
+                    <StackLayout>
+                        <Image Source="trumpet.png" HeightRequest="100" Aspect="AspectFill" />
+                        <Label Text="Trompeta YAMAHA" FontAttributes="Bold" FontSize="16" />
+                        <Label Text="$7,000.00" FontSize="14" TextColor="Gray" />
+                        <Button Text="Comprar" BackgroundColor="#4CAF50" TextColor="White" />
+                    </StackLayout>
+                </Frame>
+
+                <!-- Producto 6 -->
+                <Frame Grid.Row="2" Grid.Column="1" BackgroundColor="White" Padding="10" Margin="5" CornerRadius="8" HasShadow="True">
+                    <StackLayout>
+                        <Image Source="violin.png" HeightRequest="100" Aspect="AspectFill" />
+                        <Label Text="Violín STRADIVARIUS" FontAttributes="Bold" FontSize="16" />
+                        <Label Text="$15,000.00" FontSize="14" TextColor="Gray" />
+                        <Button Text="Comprar" BackgroundColor="#4CAF50" TextColor="White" />
+                    </StackLayout>
+                </Frame>
+            </Grid>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
+
+
